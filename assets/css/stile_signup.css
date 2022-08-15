@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body{
+    height: 100vh;
+    background-image: url(../img/backgroundpage.png);
+    background-repeat: no-repeat;
+    background-position: left left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.input div{
+    margin: 10px;
+    justify-content: center;
+    text-align: center;
+}
+
+.input input{
+    padding: 10px 20px;
+    border-radius: 3px;
+    border: 1px solid rgba( 5, 5, 5, .9);
+    box-shadow: 1px 2px 3px rgba( 5, 5, 5, .7);
+    background: rgb(249, 249, 249);
+}
+
+.form{
+    width: 300px;
+    height: 250px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 7px;
+
+    text-align: center;
+    justify-content: center;
+}
+
+.form #login{
+    width: 100px;
+    height: 30px;
+    margin: 10px;
+    background: #458B8F;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    font-weight: bolder;
+    color: #fff;
+}
+
+.form #login:hover{
+    background: #306163;
+    transition: 0.5s;
+}
+
+.form h2{
+    color: #458B8F;
+}
+
+.form h2::after{
+    content: '.';
+    opacity: 1;
+    animation: blink .7s infinite;
+}
+
+@keyframes blink{
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+.form .sign_up{
+    font-size: 12px;
+    margin: 8px;
+}
+
+.form .sign_up a{
+    text-decoration: none;
+    color: #346c6f;
+}
